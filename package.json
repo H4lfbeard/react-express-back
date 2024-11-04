@@ -1,0 +1,16 @@
+{
+	"name": "serve-employees",
+	"type": "module",
+	"version": "1.0.0",
+	"description": "API for quest React & Express",
+	"main": "index.js",
+	"scripts": {
+		"test": "Hello World"
+	},
+	"author": "TomTom",
+	"license": "ISC",
+	"dependencies": {
+		"cors": "^2.8.5",
+		"express": "^4.21.1"
+	}
+}
