@@ -3,21 +3,22 @@ import cors from "cors";
 
 const app = express();
 
-app.use(cors({ origin: ["http://localhost:3000"] }));
+app.use(cors({ origin: ["http://localhost:5173"] }));
 
 const sampleEmployee = {
 	name: {
-		first: "Charlie",
-		last: "Thompson",
+		first: "Jean-Paul",
+		last: "Richard",
 	},
-	email: "charlie.thompson@example.com",
+	email: "jp.richard@example.com",
 	picture: {
-		medium: "https://randomuser.me/api/portraits/med/men/40.jpg",
+		medium: "https://randomuser.me/api/portraits/med/men/35.jpg",
 	},
 };
 
 app.get("/api/employees", (req, res) => {
-	res.json({ results: [sampleEmployee] });
+	console.log("toto");
+	return res.json({ results: [sampleEmployee] });
 });
 
 const port = 3310;
